@@ -27,7 +27,7 @@ class Music extends Media
     @Override
     int compareToSpec(Media m)
     {
-        return this.album.compareTo(((Music)m).getAlbum()); //A->Z
+        return this.album.compareTo(((Music)m).getAlbum()); //Only handles A->Z
     }
     
     void setBand(String band)
