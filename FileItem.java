@@ -35,7 +35,7 @@ public class FileItem<T>
         catch(Exception e)
         {
             //The list could, for whatever reason, not be saved.
-            JOptionPane.showMessageDialog(null, "Det gick inte att spara filen!", "Felmeddelande", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Is wasn't possible to save the file!", "Error message", JOptionPane.ERROR_MESSAGE);
         }
     }
     
@@ -62,7 +62,7 @@ public class FileItem<T>
         catch(Exception e)
         {
             //The file could, for whatever reason, not be read.
-            JOptionPane.showMessageDialog(null, "Det gick inte att ladda filen!", "Felmeddelande", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Is wasn't possible to load the file!", "Error message", JOptionPane.ERROR_MESSAGE);
         }
         
         return list;
