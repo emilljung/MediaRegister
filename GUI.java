@@ -4,9 +4,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-//"extends JFrame" = A window is created automatically and functions like 
-//setVisible(true) does stuff to the frame created automatically.
-//You don't need to do "frame.setVisible(true);", just write "setVisible(true);" instead.
 public final class GUI extends JFrame
 {   
     class ButtonListener implements ActionListener
@@ -234,7 +231,7 @@ public final class GUI extends JFrame
                 catch(Exception e)
                 {
                     //staticF3 cannot be converted to int/a number.
-                    JOptionPane.showMessageDialog(this, "Year måste vara heltal!", "Felmeddelande", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(this, "Year must be an int!", "Error message", JOptionPane.ERROR_MESSAGE);
                 }
                 
                 //Update the list presented on the screen.
@@ -260,7 +257,7 @@ public final class GUI extends JFrame
                     catch(Exception e)
                     {
                         //staticF3 and/or changeF1 cannot be converted to int.
-                        JOptionPane.showMessageDialog(this, "Year och/eller PlayTime måste vara heltal!", "Felmeddelande", JOptionPane.ERROR_MESSAGE);
+                        JOptionPane.showMessageDialog(this, "Year and/or PlayTime must be an int!", "Error message", JOptionPane.ERROR_MESSAGE);
                     }
                 }
                 
@@ -289,7 +286,7 @@ public final class GUI extends JFrame
         catch(Exception e)
         {
             //No element is selected.
-            JOptionPane.showMessageDialog(this, "Inget element har valts!", "Felmeddelande", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "No elements have been selected!", "Error message", JOptionPane.ERROR_MESSAGE);
         }
     }
     
@@ -391,7 +388,7 @@ public final class GUI extends JFrame
         }
         catch(Exception e)
         {
-            JOptionPane.showMessageDialog(this, "Inget element har valts!", "Felmeddelande", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "No elements have been selected!", "Error message", JOptionPane.ERROR_MESSAGE);
         }
     }
     
@@ -423,7 +420,7 @@ public final class GUI extends JFrame
                 catch(Exception e)
                 {
                     //The text in staticF3 could not be converted.
-                    JOptionPane.showMessageDialog(this, "Year måste vara heltal!", "Felmeddelande", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(this, "Year must be an int!", "Error message", JOptionPane.ERROR_MESSAGE);
                 }
             }
             else
@@ -443,7 +440,7 @@ public final class GUI extends JFrame
                     catch(Exception e)
                     {
                         //The text in staticF3 and/or changeF1 could not be converted.
-                        JOptionPane.showMessageDialog(this, "Year och/eller PlayTime måste vara heltal!", "Felmeddelande", JOptionPane.ERROR_MESSAGE);
+                        JOptionPane.showMessageDialog(this, "Year and/or PlayTime must be an int!", "Error message", JOptionPane.ERROR_MESSAGE);
                     }
                 }
             }
